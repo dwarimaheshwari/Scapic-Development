@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.content-one,
+.content-two,
+.content-three {
+  width: 200px;
+  height: 200px;
+}
+ 
+.circle-one,
+.circle-two,
+.circle-three {
+  width: 60px;
+  height: 60px;
+  border-radius: 80px;
+}
+ 
+.content-one {
+	background: pink;
+	 width: %100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	 
+}
+ 
+.content-two {
+ 	background: orange;
+	position: fixed;
+  
+}
+ 
+.content-three {
+ 	background: violet;
+	margin-top:200px;
+	position:relative;
+	
+}
+ 
+.circle-one {
+   background : red;
+    padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+ 
+.circle-two {
+   background : white;
+       position: absolute;
+    top: 50%;
+    left: 50%; 
+     
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%); 
+    -o-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+ 
+   
+    
+}
+ 
+.circle-three {
+    
+ 	background : blue;
+	overflow:auto;
+	margin:auto;
+	position:absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+}
+</style>
+</head>
+<body>
+	<div class="content-one">
+		<div class="circle-one"></div>
+	</div>
+ 
+	<div class="content-two">
+		<div  class="circle-two"></div>
+	</div>
+ 
+	<div class="content-three">
+		<div class="circle-three"></div>
+	</div>
+</body>
+</html>
