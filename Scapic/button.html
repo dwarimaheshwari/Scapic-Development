@@ -1,0 +1,83 @@
+<html>
+    <head>
+	
+	<title>Buttons working</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	function enableButton(){
+	
+	document.getElementById("mainButton").disabled=false;
+	document.getElementById("mainButton").className = "main";
+	}
+	function disableButton(){
+	
+	document.getElementById("mainButton").disabled = true;
+	document.getElementById("mainButton").className = "main-disabled";
+	}
+	</script>
+	<style>
+	.content {
+	margin:auto;
+    width:300px;
+	height:200px;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+ 
+.main {
+ border-radius:25px;
+ width:200px;
+ height:40px;
+ margin-left:6px;
+ font-size:20px;
+ background-color:#e60000;
+ color:white;
+ border:none;
+ cursor: pointer;
+}
+ 
+.main:hover {
+background-color:#ff4d4d;
+}
+ 
+.main-disabled {
+ border-radius:25px;
+ width:200px;
+ height:40px;
+ margin-left:6px;
+ font-size:20px;
+ background-color:geay;
+ color:white;
+ border:none;
+ cursor: not-allowed;
+}
+.btn.disable{
+margin:2px;
+margin-top:15px;
+border-radius:5px;
+background:none;
+border:1px solid gray;
+}
+.btn.enable{
+margin:2px;
+margin-top:15px;
+border-radius:5px;
+background:none;
+border:1px solid gray;
+}
+	</style>
+	</head>
+	<body>
+		<div class="content">
+			<button class="btn main" id="mainButton">Click Me</button>
+			<div>
+  				<button class="btn disable" onclick="disableButton()">Disable Button</button>
+  				<button class="btn enable"onclick="enableButton()">Enable Button</button>
+			</div>
+		</div>
+	</body>
+	
+</html>
